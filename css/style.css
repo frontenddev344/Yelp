@@ -67,7 +67,7 @@ p{
 }
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1275px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -226,4 +226,65 @@ a.toggle-btn {
 .banner-btns {
     display: flex;
     gap: 12px;
+    margin-bottom: 24px;
+}
+.banner-content {
+    margin-bottom: 24px;
+}
+/* business section start  */
+.business {
+    position: relative;
+    margin-top: -150px;
+}
+.business-wrap {
+    border-radius: 16px;
+    border: 1px solid rgba(227, 231, 237, 0.40);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
+    backdrop-filter: blur(38.400001525878906px);
+    padding: 20px;
+}
+.business-main {
+    background: #fff;
+    border-radius: inherit;
+}
+
+.pagination {
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+}
+.pagination ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.pagination ul a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #647187;
+}
+.pagination ul a.active {
+    background: radial-gradient(95% 95% at 50% 5%, #FF4751 0%, #D30000 100%);
+    box-shadow: 0px 1.867px 1.867px 0px rgba(255, 205, 206, 0.25) inset;
+    color: #fff;
+}
+.pagination button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid  #CCD5DF;
+    background: var(--White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(14, 24, 41, 0.05);
+}
+
+.business-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
 }
