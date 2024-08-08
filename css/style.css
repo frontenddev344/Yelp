@@ -651,3 +651,22 @@ td.connection {
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* form start  */
+.form-group {
+    margin-bottom: 10px;
+}
+.label-control {
+    display: block;
+    width: 100%;
+}
+.input-control {
+    display: block;
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid var(--Grey-G40, #E7E9EB);
+    box-shadow: 0px 1px 2px 0px color(display-p3 0.0627 0.0941 0.1569 / 0.05);
+    padding: 8px 14px;
+}

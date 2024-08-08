@@ -206,7 +206,7 @@
                         <img src="images/LinkSimple.svg" alt="LinkSimple">
                         Connect yelp business
                     </button>
-                    <button class="primary-btn">
+                    <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img src="images/Plus.svg" alt="Plus">
                         Add business
                     </button>
@@ -767,6 +767,91 @@
         </div>
        </section>
        <!-- business end  -->
+         <!-- business popup start -->
+         <div class="business-modal">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                     <h4>Add a new business</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="business-form">
+                           <form>
+                              <div class="form-group">
+                                 <label for="business-name" class="label-control">
+                                    Business name <sup>*</sup>
+                                 </label>
+                                 <input type="text" id="business-name" class="input-control" value="iQSAY">
+                              </div>
+                              <div class="form-group">
+                                 <label for="address" class="label-control">
+                                    Address
+                                 </label>
+                                 <textarea name="address" class="input-control" id="address"> United State</textarea>
+                              </div>
+                              <div class="form-group">
+                                 <label for="address" class="label-control">
+                                    Phone number<sup>*</sup>
+                                 </label>
+                                 <select name="cars" id="cars" class="input-control">
+                                    <option value="volvo">+1 (555) 000-0000</option>
+                                    <option value="saab">+1 (555) 000-0000</option>
+                                    <option value="mercedes">+1 (555) 000-0000</option>
+                                    <option value="audi">+1 (555) 000-0000</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                 <label for="business-name" class="label-control">
+                                    Email address <sup>*</sup>
+                                 </label>
+                                 <input type="text" id="business-name" class="input-control" value="---">
+                              </div>
+                           </form>
+                           <div class="form-group">
+                              <label for="business-name" class="label-control">
+                                 Email address <sup>*</sup>
+                              </label>
+                              <input type="url" id="homepage" name="homepage" class="input-control" value="www.iqsay.com/webhooks">
+                           </div>
+                           <div class="form-group">
+                              <label for="address" class="label-control">
+                                 Thank You Message <sub>*</sub>
+                              </label>
+                              <textarea name="address" class="input-control" id="address" placeholder="Your message here.."></textarea>
+                           </div>
+                           <div class="form-group">
+                              <label for="address" class="label-control">
+                                 Request Message <sub>*</sub>
+                              </label>
+                              <textarea name="address" class="input-control" id="address" placeholder="Your message here.."></textarea>
+                           </div>
+                           <div class="form-group">
+                              <label for="address" class="label-control">
+                                 Phone number<sup>*</sup>
+                              </label>
+                              <select name="cars" id="cars" class="input-control">
+                                 <option value="volvo">iQSAY account</option>
+                                 <option value="saab">+1 (555) 000-0000</option>
+                                 <option value="mercedes">+1 (555) 000-0000</option>
+                                 <option value="audi">+1 (555) 000-0000</option>
+                               </select>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                    <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <img src="images/Plus.svg" alt="Plus">
+                     Add business
+                 </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+         <!-- business popup end -->
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/custom.js"></script>
