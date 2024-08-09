@@ -344,6 +344,7 @@ a.toggle-btn {
     padding: 6px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
 }
 .view-all {
@@ -729,7 +730,19 @@ td.action details {
 .buisness-card .edit-info {
     flex-direction: column;
 }
-
+.user-card-layout .buisness-card .card-head {
+    margin-bottom: 10px;
+}
+.user-card-layout .card-head-left h4 {
+    margin-bottom: 0;
+    line-height: 1;
+}
+.user-card-layout .card-head-left  span {
+    color: #647087;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
 /* form start  */
 .form-group {
     margin-bottom: 18px;

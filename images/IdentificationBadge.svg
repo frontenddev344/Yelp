@@ -1,0 +1,13 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="IdentificationBadge" clip-path="url(#clip0_47_1274)">
+<path id="Vector" d="M8 11C9.10457 11 10 10.1046 10 9C10 7.89543 9.10457 7 8 7C6.89543 7 6 7.89543 6 9C6 10.1046 6.89543 11 8 11Z" stroke="#687382" style="stroke:#687382;stroke:color(display-p3 0.4078 0.4510 0.5098);stroke-opacity:1;" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M5 12.5C5.3493 12.0343 5.80224 11.6563 6.32295 11.3959C6.84366 11.1355 7.41783 11 8 11C8.58217 11 9.15634 11.1355 9.67705 11.3959C10.1978 11.6563 10.6507 12.0343 11 12.5" stroke="#687382" style="stroke:#687382;stroke:color(display-p3 0.4078 0.4510 0.5098);stroke-opacity:1;" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M13 14V3C13 2.72386 12.7761 2.5 12.5 2.5L3.5 2.5C3.22386 2.5 3 2.72386 3 3V14C3 14.2761 3.22386 14.5 3.5 14.5H12.5C12.7761 14.5 13 14.2761 13 14Z" stroke="#687382" style="stroke:#687382;stroke:color(display-p3 0.4078 0.4510 0.5098);stroke-opacity:1;" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M6 4.5H10" stroke="#687382" style="stroke:#687382;stroke:color(display-p3 0.4078 0.4510 0.5098);stroke-opacity:1;" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_47_1274">
+<rect width="16" height="16" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>
