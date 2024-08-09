@@ -1,0 +1,38 @@
+@media screen and (max-width:768px){
+    header.site-header {
+        padding: 8px 0;
+    }
+    .site-logo {
+        margin-right: auto;
+        margin-left: 30px;
+    }
+    nav.site-nav {
+        position: fixed;
+        width: 300px;
+        background: #672424;
+        left: 0;
+        margin: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 9;
+        padding: 50px 0;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+    }
+    .site-nav ul {
+        align-items: start;
+        flex-direction: column;
+    }
+    .site-nav ul li {
+        width: 100%;
+    }
+    .site-nav ul a {
+        width: 100%;
+    }
+    a.toggle-btn {
+        display: block;
+    }
+    .closed-btn {
+        display: block;
+    }
+    }
