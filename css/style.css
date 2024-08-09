@@ -660,8 +660,10 @@ td.connection {
 .business-list th:last-child, .business-list td:last-child {
     position: sticky;
     right: 0;
-    background-color: #fff;
     z-index: 1;
+}
+.business-list td:last-child {
+    background-color: #fff;
 }
 td.action details {
     position: relative;
