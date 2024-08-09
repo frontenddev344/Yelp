@@ -386,6 +386,7 @@ a.toggle-btn {
 
 .business-footer {
     border-top: 1px solid #E3E7ED;
+    margin-top: 40px;
 }
 aside.table-fixed_bar {
     box-shadow: 0 0 4px rgba(0 0 0 /10%);
@@ -626,6 +627,10 @@ td.connection {
 td.action details {
     position: relative;
     text-align: center;
+}
+
+.business-list tr:last-child th, .business-list tr:last-child td {
+    border-bottom: 0;
 }
 /* business card layout start  */
 .business-card-layout {
