@@ -173,6 +173,7 @@ header.site-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 20px;
 }
 .site-nav ul a {
     color: #fff;
@@ -249,7 +250,7 @@ a.toggle-btn {
     font-size: 20px;
 }
 .banner-content h1 {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 5px;
