@@ -44,9 +44,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 $(document).ready(function(){
     $(".business-list .action").click(function(){
-        $(this).toggleClass('active');
+        $(this).css('z-index', '50');
     });
 });
+
+// $(document).ready(function(){
+//     $(".business-list .action").click(function(){
+//         $(this).toggleClass('active');
+//     });
+// });
+// $(document).ready(function(){
+//     $(".business-list .action").click(function(){
+//         // Remove z-index from all .action elements
+//         $(".business-list .action").css('z-index', '');
+
+//         // Set z-index only for the clicked element
+//         $(this).css('z-index', '50');
+//     });
+// });
