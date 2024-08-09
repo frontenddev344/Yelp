@@ -115,6 +115,10 @@ p{
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    transition: all 0.2s linear;
+}
+.secondary-btn:hover {
+    background: #D30000;
 }
 .primary-btn {
     border-radius: 8px;
@@ -128,6 +132,10 @@ p{
     font-weight: 500;
     color: var(--black);
     border: 1px solid rgb(255 0 0 / 20%);
+    transition: all 0.2s linear;
+}
+.primary-btn:hover {
+    opacity: 0.5;
 }
 /* global end  */
 
@@ -310,8 +318,15 @@ a.toggle-btn {
     border: 1px solid  #CCD5DF;
     background: var(--White, #FFF);
     box-shadow: 0px 1px 2px 0px rgba(14, 24, 41, 0.05);
+    transition: all 0.2s linear;
 }
 
+.pagination button:hover {
+    background: #D30000;
+}
+.pagination button:hover svg path {
+    stroke: #fff !important;
+}
 .business-header {
     display: flex;
     flex-wrap: wrap;
