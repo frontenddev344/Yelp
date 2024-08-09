@@ -36,7 +36,7 @@
         display: block;
     }
     .site-banner {
-        height: 450px;
+        height: 500px;
     }
     .banner-content-wrap {
         flex-direction: column;
@@ -64,6 +64,9 @@
     }
     .pagination {
         padding: 12px 16px;
+    }
+    .banner-btns {
+        display: grid;
     }
 }
 
