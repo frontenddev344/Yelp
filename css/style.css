@@ -776,7 +776,12 @@ td.action details {
 textarea.input-control {
     height: 82px;
 }
-
+textarea#address {
+    background-image: url(../images/map-pin.svg);
+    background-repeat: no-repeat;
+    background-position: 14px 10px;
+    padding-left: 35px;
+}
 /* business popup start  */
 .business-modal .modal-dialog {
     max-width: 646px;
