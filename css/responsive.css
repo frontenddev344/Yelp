@@ -35,4 +35,43 @@
     .closed-btn {
         display: block;
     }
+    .site-banner {
+        height: 450px;
     }
+    .banner-content-wrap {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-content {
+        text-align: center;
+    }
+    .business-header_right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .search_bar {
+        grid-column: 1/-1;
+    }
+}
+
+@media screen and (max-width:575px){
+    .business-card-layout .grid {
+        grid-template-columns: 100%;
+    }
+    .business-header {
+        padding: 12px 16px;
+    }
+    .pagination {
+        padding: 12px 16px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .business-header_right {
+        grid-template-columns: 100%;
+    }
+    .pagination ul {
+        display: none;
+    }
+}

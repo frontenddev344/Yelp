@@ -301,9 +301,11 @@ a.toggle-btn {
 
 .business-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 12px 24px;
     border-bottom: 1px solid  #E3E7ED;
+    gap: 10px;
 }
 
 .business-header_left {
@@ -424,9 +426,16 @@ aside.table-fixed_bar {
     margin-top: 2px;
     z-index: 1;
 }
+.business-list td.action .edit-info {
+    right: 34px;
+}
 .edit-info button {
     background: transparent;
     border: 0;
+}
+.business-list tr:last-child td.action .edit-info {
+    top: 0;
+    transform: translateY(-100%);
 }
 /* table start  */
 .business-table-warp {
@@ -439,6 +448,7 @@ aside.table-fixed_bar {
 table.business-list {
     width: 100%;
     min-width: 1266px;
+    user-select: none;
 }
 table.business-list h4, table.business-list p {
     padding: 12px 24px;
@@ -486,7 +496,7 @@ table.business-list p {
 .status-active::before {
     content: "";
     position: absolute;
-    background: #00D93E;
+    background: #12B76A;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -583,6 +593,8 @@ td.name p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #0E1829;
+    font-weight: 500;
 }
 td.address p {
     width: 167px;
@@ -622,6 +634,7 @@ td.action details {
 }
 .business-card-layout .grid {
     grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 .buisness-card {
     border: 1px solid #E1E5E5;

@@ -44,4 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-  
+$(document).ready(function(){
+    $(".business-list .action").click(function(){
+        $(this).css('z-index', '50');
+    });
+});
