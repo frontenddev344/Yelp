@@ -208,6 +208,18 @@ header.site-header {
 .toggle nav.site-nav {
     transform: translateX(0);
 }
+.notification-icon {
+    position: relative;
+}
+.notification-icon sup {
+    width: 10px;
+    height: 10px;
+    background: #FF8913;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
 /* site banner start  */
 
 .site-banner {
