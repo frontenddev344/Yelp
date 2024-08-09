@@ -53,6 +53,13 @@
     .search_bar {
         grid-column: 1/-1;
     }
+    .view-all {
+        display: flex;
+        gap: 5px;
+    }
+    .view-all img:last-child {
+        margin-left: auto;
+    }
 }
 
 @media screen and (max-width:575px){
@@ -71,6 +78,7 @@
     .business-card-layout {
         padding: 16px 16px 8px;
     }
+   
 }
 
 @media screen and (max-width:460px){
@@ -80,11 +88,5 @@
     .pagination ul {
         display: none;
     }
-    .view-all {
-        display: flex;
-        gap: 5px;
-    }
-    .view-all img:last-child {
-        margin-left: auto;
-    }
+    
 }
