@@ -727,11 +727,12 @@ td.action details {
 
 /* form start  */
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 .label-control {
     display: block;
     width: 100%;
+    margin-bottom: 6px;
 }
 .input-control {
     display: block;
@@ -742,9 +743,47 @@ td.action details {
     box-shadow: 0px 1px 2px 0px color(display-p3 0.0627 0.0941 0.1569 / 0.05);
     padding: 8px 14px;
 }
+textarea.input-control {
+    height: 82px;
+}
+
+/* business popup start  */
+.business-modal .modal-dialog {
+    max-width: 646px;
+}
 .modal-footer .primary-btn {
     border-radius: 8px;
     background: radial-gradient(93.17% 56.83% at 54.17% -22.22%, #FFB0B2 0%, #F00 100%);
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20) inset, 0px 0px 0px 2px rgba(255, 255, 255, 0.08) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 6px -3px rgba(0, 0, 0, 0.20);
     color: #fff;
+}
+
+.business-modal .modal-header h4 {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}
+.business-modal .modal-content {
+    border-radius: 0;
+}
+.business-modal .modal-header button.btn-close {
+    background-size: 11px;
+    padding: 0;
+    margin-right: 8px;
+}
+.modal-body {
+    padding: 24px;
+}
+.business-modal .modal-footer {
+    padding: 12px 24px;
+}
+.modal-footer .btn-secondary {
+    border-radius: 8px;
+    border: 1px solid var(--Grey-G40, #E7E9EB);
+    background: var(--White-White, #FFF);
+    box-shadow: 0px 1px 2px 0px rgba(14, 24, 41, 0.05);
+    color: #000;
+    text-transform: capitalize;
+    padding: 8px 12px;
 }
