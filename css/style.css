@@ -892,6 +892,7 @@ select.input-control {
     background-image: url(../images/arrow-down-dark.svg);
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) center;
+    cursor: pointer;
 }
 .countries_warp {
     position: relative;
