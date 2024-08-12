@@ -851,6 +851,11 @@ td.action details {
     display: block;
     width: 100%;
     margin-bottom: 6px;
+    color: #445469;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
 .input-control {
     display: block;
@@ -860,6 +865,10 @@ td.action details {
     border: 1px solid var(--Grey-G40, #E7E9EB);
     box-shadow: 0px 1px 2px 0px color(display-p3 0.0627 0.0941 0.1569 / 0.05);
     padding: 8px 14px;
+}
+.label-control sup, .label-control sub {
+    font-size: 14px;
+    top: 0;
 }
 textarea.input-control {
     height: 82px;
