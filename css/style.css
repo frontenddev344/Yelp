@@ -912,6 +912,7 @@ select.input-control {
     height: 100%;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 input#webHook {
     padding-left: 95px;
