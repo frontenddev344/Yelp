@@ -839,50 +839,67 @@
                                  <textarea name="address" class="input-control" id="address"> United State</textarea>
                               </div>
                               <div class="form-group">
-                                 <label for="address" class="label-control">
+                                 <label for="countryCode" class="label-control">
                                     Phone number<sup>*</sup>
                                  </label>
-                                 <select name="cars" id="cars" class="input-control">
-                                    <option value="volvo">+1 (555) 000-0000</option>
-                                    <option value="saab">+1 (555) 000-0000</option>
-                                    <option value="mercedes">+1 (555) 000-0000</option>
-                                    <option value="audi">+1 (555) 000-0000</option>
-                                  </select>
+                                 <div class="countries_warp">
+                                    <select id="countryCode" class="input-control">
+                                        <option value="">US</option>
+                                        <option value="">UK</option>
+                                        <option value="">In</option>
+                                        <option value="">Aus</option>
+                                        <option value="">Jp</option>
+                                        <!-- Add more countries as needed -->
+                                    </select>
+                                    <input type="tel" id="phone" value="+1 (555) 000-0000" class="input-control">
+                                 </div>
                               </div>
                               <div class="form-group">
-                                 <label for="business-name" class="label-control">
+                                 <label for="email-address" class="label-control">
                                     Email address <sup>*</sup>
                                  </label>
-                                 <input type="text" id="business-name" class="input-control" value="---">
+                                 <input type="text" id="email-address" class="input-control" placeholder="---">
                               </div>
                            </form>
                            <div class="form-group">
-                              <label for="business-name" class="label-control">
-                                 Email address <sup>*</sup>
+                              <label for="webHook" class="label-control">
+                                 WebHook Url <sup>*</sup>
                               </label>
-                              <input type="url" id="homepage" name="homepage" class="input-control" value="www.iqsay.com/webhooks">
+                              <div class="web-hook-opp">
+                                 <span>https://</span>
+                                 <input type="url" id="webHook" name="webHook" class="input-control" value="www.iqsay.com/webhooks">
+                              </div>
                            </div>
                            <div class="form-group">
-                              <label for="address" class="label-control">
+                              <label for="thankyou-message" class="label-control">
                                  Thank You Message <sub>*</sub>
                               </label>
-                              <textarea name="address" class="input-control" id="thankyou-message" placeholder="Your message here.."></textarea>
+                              <textarea name="thankyou-message" class="input-control" id="thankyou-message" placeholder="Your message here.."></textarea>
                            </div>
                            <div class="form-group">
-                              <label for="address" class="label-control">
+                              <label for="req-message" class="label-control">
                                  Request Message <sub>*</sub>
                               </label>
-                              <textarea name="address" class="input-control" id="req-message" placeholder="Your message here.."></textarea>
+                              <textarea name="thankyou-message" class="input-control" id="req-message" placeholder="Your message here.."></textarea>
                            </div>
                            <div class="form-group">
-                              <label for="address" class="label-control">
-                                 Phone number<sup>*</sup>
+                              <label for="accounts" class="label-control">
+                                 Yelp Accounts<sup>*</sup>
                               </label>
-                              <select name="cars" id="cars" class="input-control">
+                              <select name="cars" id="accounts" class="input-control">
                                  <option value="volvo">iQSAY account</option>
-                                 <option value="saab">+1 (555) 000-0000</option>
-                                 <option value="mercedes">+1 (555) 000-0000</option>
-                                 <option value="audi">+1 (555) 000-0000</option>
+                                 <option value="saab">Build Strong Group</option>
+                                 <option value="mercedes">Plumbing test buisness</option>
+                                 <option value="audi">HUS</option>
+                                 <option value="audi">HUS Roofing</option>
+                                 <option value="audi">JRD Construction</option>
+                                 <option value="audi">Oro Coast Builders</option>
+                                 <option value="audi">Google</option>
+                                 <option value="audi">Microsoft</option>
+                                 <option value="audi">Apple</option>
+                                 <option value="audi">Minuiux</option>
+                                 <option value="audi">McDonald's</option>
+                                 
                                </select>
                            </div>
                         </div>

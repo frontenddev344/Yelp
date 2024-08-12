@@ -867,6 +867,55 @@ textarea#address {
     background-position: 14px 10px;
     padding-left: 35px;
 }
+input#email-address {
+    background-image: url(../images/mail-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 35px;
+}
+select.input-control {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow-down-dark.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+.countries_warp {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+.countries_warp input#phone {
+    position: relative;
+    margin-left: -8px;
+    border-left: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.countries_warp select#countryCode:focus-visible {
+    outline: 0;
+}
+.web-hook-opp {
+    position: relative;
+}
+.web-hook-opp span {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    border-right: 1px solid #E7E9EB;
+    padding-right: 12px;
+    color: #647187;
+    font-size: 14px;
+    line-height: 24px;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+input#webHook {
+    padding-left: 95px;
+}
 /* business popup start  */
 .business-modal .modal-dialog {
     max-width: 646px;
@@ -1057,4 +1106,52 @@ input:focus + .slider {
   
 input:checked + .slider:before {
     transform: translateX(16px);
+}
+
+/* delete popup start  */
+.delete-modal .modal-dialog {
+    max-width: 400px;
+}
+.delete-modal .modal-content {
+    padding: 24px;
+}
+.delete-modal .modal-body {
+    padding: 0 0 24px;
+}
+.delete-modal .modal-body h3 {
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.delete-modal .modal-body p {
+    margin: 0;
+    color: #647187;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.delete-modal  .modal-footer {
+    padding: 0;
+    border: 0;
+    justify-content: space-between;
+}
+.delete-modal .modal-footer button {
+    display: block;
+    width: calc(50% - 4px);
+    margin: 0;
+}
+.delete-icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 8px solid  #FFF7F6;
+    background: #FFEDED;
+    margin: 0 auto 20px;
 }
