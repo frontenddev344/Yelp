@@ -1155,3 +1155,14 @@ input:checked + .slider:before {
     background: #FFEDED;
     margin: 0 auto 20px;
 }
+
+/* add new user popup  */
+.user-form .grid {
+    grid-column-gap: 18px;
+}
+.user-business-modal .modal-header h4 {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+}

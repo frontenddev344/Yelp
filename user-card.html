@@ -219,9 +219,9 @@
                         <img src="images/LinkSimple.svg" alt="LinkSimple">
                         Connect yelp business
                     </button>
-                    <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                         <img src="images/Plus.svg" alt="Plus">
-                        Add business
+                        Add a new user
                     </button>
                 </div>
             </div>
@@ -860,48 +860,48 @@
                                  </label>
                                  <input type="text" id="email-address" class="input-control" placeholder="---">
                               </div>
-                           </form>
-                           <div class="form-group">
-                              <label for="webHook" class="label-control">
-                                 WebHook Url <sup>*</sup>
-                              </label>
-                              <div class="web-hook-opp">
-                                 <span>https://</span>
-                                 <input type="url" id="webHook" name="webHook" class="input-control" value="www.iqsay.com/webhooks">
+                              <div class="form-group">
+                                 <label for="webHook" class="label-control">
+                                    WebHook Url <sup>*</sup>
+                                 </label>
+                                 <div class="web-hook-opp">
+                                    <span>https://</span>
+                                    <input type="url" id="webHook" name="webHook" class="input-control" value="www.iqsay.com/webhooks">
+                                 </div>
                               </div>
-                           </div>
-                           <div class="form-group">
-                              <label for="thankyou-message" class="label-control">
-                                 Thank You Message <sub>*</sub>
-                              </label>
-                              <textarea name="thankyou-message" class="input-control" id="thankyou-message" placeholder="Your message here.."></textarea>
-                           </div>
-                           <div class="form-group">
-                              <label for="req-message" class="label-control">
-                                 Request Message <sub>*</sub>
-                              </label>
-                              <textarea name="thankyou-message" class="input-control" id="req-message" placeholder="Your message here.."></textarea>
-                           </div>
-                           <div class="form-group">
-                              <label for="accounts" class="label-control">
-                                 Yelp Accounts<sup>*</sup>
-                              </label>
-                              <select name="cars" id="accounts" class="input-control">
-                                 <option value="volvo">iQSAY account</option>
-                                 <option value="saab">Build Strong Group</option>
-                                 <option value="mercedes">Plumbing test buisness</option>
-                                 <option value="audi">HUS</option>
-                                 <option value="audi">HUS Roofing</option>
-                                 <option value="audi">JRD Construction</option>
-                                 <option value="audi">Oro Coast Builders</option>
-                                 <option value="audi">Google</option>
-                                 <option value="audi">Microsoft</option>
-                                 <option value="audi">Apple</option>
-                                 <option value="audi">Minuiux</option>
-                                 <option value="audi">McDonald's</option>
-                                 
-                               </select>
-                           </div>
+                              <div class="form-group">
+                                 <label for="thankyou-message" class="label-control">
+                                    Thank You Message <sub>*</sub>
+                                 </label>
+                                 <textarea name="thankyou-message" class="input-control" id="thankyou-message" placeholder="Your message here.."></textarea>
+                              </div>
+                              <div class="form-group">
+                                 <label for="req-message" class="label-control">
+                                    Request Message <sub>*</sub>
+                                 </label>
+                                 <textarea name="thankyou-message" class="input-control" id="req-message" placeholder="Your message here.."></textarea>
+                              </div>
+                              <div class="form-group">
+                                 <label for="accounts" class="label-control">
+                                    Yelp Accounts<sup>*</sup>
+                                 </label>
+                                 <select name="cars" id="accounts" class="input-control">
+                                    <option value="volvo">iQSAY account</option>
+                                    <option value="saab">Build Strong Group</option>
+                                    <option value="mercedes">Plumbing test buisness</option>
+                                    <option value="audi">HUS</option>
+                                    <option value="audi">HUS Roofing</option>
+                                    <option value="audi">JRD Construction</option>
+                                    <option value="audi">Oro Coast Builders</option>
+                                    <option value="audi">Google</option>
+                                    <option value="audi">Microsoft</option>
+                                    <option value="audi">Apple</option>
+                                    <option value="audi">Minuiux</option>
+                                    <option value="audi">McDonald's</option>
+                                    
+                                  </select>
+                              </div>
+                           </form>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -916,6 +916,81 @@
             </div>
         </div>
          <!-- business popup end -->
+           <!-- user add popup start -->
+         <div class="user-business-modal">
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                     <h4>Add a new user</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="user-form">
+                           <form>
+                              <div class="grid grid-cols-2">
+                                <div class="item">
+                                    <div class="form-group">
+                                        <label for="first-name" class="label-control">
+                                            First name
+                                         </label>
+                                         <input type="text" id="first-name" class="input-control" value="Oran">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="form-group">
+                                        <label for="last-name" class="label-control">
+                                            Last name
+                                         </label>
+                                         <input type="text" id="last-name" class="input-control" value="Aviv">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="form-group">
+                                        <label for="user-name" class="label-control">
+                                            Username
+                                         </label>
+                                         <input type="text" id="user-name" class="input-control" value="Aviv">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="form-group">
+                                        <label for="accounts" class="label-control">
+                                            Select user type
+                                        </label>
+                                        <select name="cars" id="accounts" class="input-control">
+                                           <option value="volvo">iQSAY account</option>
+                                           <option value="saab">Build Strong Group</option>
+                                           <option value="mercedes">Plumbing test buisness</option>
+                                           <option value="audi">HUS</option>
+                                           <option value="audi">HUS Roofing</option>
+                                           <option value="audi">JRD Construction</option>
+                                           <option value="audi">Oro Coast Builders</option>
+                                           <option value="audi">Google</option>
+                                           <option value="audi">Microsoft</option>
+                                           <option value="audi">Apple</option>
+                                           <option value="audi">Minuiux</option>
+                                           <option value="audi">McDonald's</option>
+                                           
+                                         </select>
+                                     </div>
+                                </div>
+                              </div>
+                           </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                    <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     <img src="images/Plus-white.svg" alt="Plus-white">
+                     Add business
+                 </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+         <!-- user add  popup end -->
            <!-- profile popup start  -->
          <!-- Modal -->
          <div class="modal fade profile-modal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
