@@ -184,16 +184,24 @@
                        </svg>
                     </span>
                  </div>
-                  <div class="profile">
-                     <div class="avatar">
-                        <div class="avatar-content">
-                           <a href="#">
-                           <img src="images/profile-dp.png" alt="profile-dp">
-                           <span>Oran <img src="images/arrow-down.svg" alt="arrow-down"></span> 
-                           </a>
-                        </div>
-                     </div>
-                  </div>
+                 <div class="profile">
+                    <div class="avatar">
+                       <div class="avatar-content">
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                          <img src="images/profile-dp.png" alt="profile-dp">
+                          </a>
+                          <button class="profile-name">
+                             <span>Oran <img src="images/arrow-down.svg" alt="arrow-down"></span>
+                             <ul class="profile-dropdown">
+                                <li>
+                                   <a href="#"><img src="images/logout.svg" alt="logout"> Logout</a>
+                                </li>
+                             </ul>
+                          </button>
+
+                       </div>
+                    </div>
+                 </div>
                </div>
             </div>
          </div>
@@ -891,6 +899,66 @@
             </div>
         </div>
          <!-- business popup end -->
+           <!-- profile popup start  -->
+         <!-- Modal -->
+         <div class="modal fade profile-modal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4>Profile settings</h4>
+               </div>
+               <div class="modal-body">
+                  <div class="profile_dp">
+                     <figure>
+                        <img src="images/profile.png" alt="profile">
+                        <div class="profile-edit">
+                           <img src="images/edit-2.svg" alt="edit-2">
+                        </div>
+                     </figure>
+                     <button><img src="images/trash-2.svg" alt="trash-2">Remove photo</button>
+                  </div>
+                  <form>
+                     <div class="form-group">
+                        <div class="grid grid-cols-2">
+                           <div class="item">
+                              <p>Change password</p>
+                           </div>
+                           <div class="item">
+                              <label class="switch">
+                                 <input type="checkbox">
+                                 <span class="slider"></span>
+                               </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <input type="password" id="password" placeholder="Current password" class="input-control">
+                     </div>
+                     <div class="form-group">
+                        <input type="password" id="new-password" placeholder="New password" class="input-control">
+                     </div>
+                     <div class="form-group">
+                        <input type="password" id="reenter-password" placeholder="Re-enter new password" class="input-control">
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <div class="form-group">
+                     <label for="business-name" class="label-control">
+                        Yelp Account ids
+                     </label>
+                     <input type="text" id="business-name" class="input-control" value="DBXCkbDPSActqiUbBX2soQ,-l171d0dKcNsYkCjyL1E_g">
+                  </div>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                  <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   <img src="images/Plus-white.svg" alt="Plus-white">
+                   Add business
+               </button>
+                  </div>
+            </div>
+            </div>
+         </div>
+      <!-- profile popup end  -->
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/custom.js"></script>
