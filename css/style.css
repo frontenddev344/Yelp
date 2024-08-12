@@ -141,6 +141,9 @@ p{
 .primary-btn:hover {
     opacity: 0.5;
 }
+.input-control:focus-visible {
+    outline: 1px solid var(--red);
+}
 /* global end  */
 
 header.site-header {
