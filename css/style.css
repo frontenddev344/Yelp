@@ -869,6 +869,7 @@ td.action details {
 .label-control sup, .label-control sub {
     font-size: 14px;
     top: 0;
+    left: -2px;
 }
 textarea.input-control {
     height: 82px;
@@ -1183,18 +1184,17 @@ input:checked + .slider:before {
 /* login pages start  */
 .common-form-style {
     width: 100%;
-    max-width: 790px;
     margin: 0 auto;
-    display: grid;
-    place-items: center;
     height: 100vh;
 }
 .form-wrap {
     box-shadow: 0 0 5px rgba(0 0 0 /5%);
 }
-.form-inner {   
+.form-inner {
     padding: 32px;
     position: relative;
+    max-width: 360px;
+    margin: 0 auto;
 }
 .form-inner form {
     padding: 32px 0;
