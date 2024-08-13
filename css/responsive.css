@@ -60,6 +60,16 @@
     .view-all img:last-child {
         margin-left: auto;
     }
+    .form-wrap .grid {
+        height: 100%;
+        grid-template-columns: 100%;
+    }
+    .form-img {
+        display: none;
+    }
+    .form-wrap .grid .img-item {
+        display: none;
+    }
 }
 
 @media screen and (max-width:575px){

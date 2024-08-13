@@ -1189,8 +1189,6 @@ input:checked + .slider:before {
 .common-form-style {
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
-    overflow: hidden;
 }
 .form-wrap {
     box-shadow: 0 0 5px rgba(0 0 0 /5%);
@@ -1204,11 +1202,10 @@ input:checked + .slider:before {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin-top: 200px;
+    justify-content:center;
 }
 .form-wrap .item {
-    height: 100%;
+    height: 100vh;
 }
 .form-inner form {
     padding: 32px 0;
@@ -1228,6 +1225,7 @@ input:checked + .slider:before {
     background-size: cover;
     display: flex;
     align-items: center;
+    margin-bottom: -20px;
 }
 .form-icon a {
     background: radial-gradient(93.71% 93.71% at 20.73% 10.98%, #FFA9AC 0%, #FC0000 100%);
