@@ -1429,3 +1429,6 @@ input[type="checkbox"]:checked::before {
 input[id="password"] + p {
     margin-top: 5px;
 }
+input#new-password + p {
+    margin-top: 6px;
+}
