@@ -1355,6 +1355,7 @@ input[type="checkbox"]:checked::before {
 }
 .rememeber label.label-control {
     margin: 0;
+    color: #314155;
 }
 
 .from-btn button {
@@ -1431,7 +1432,9 @@ input[type="checkbox"]:checked::before {
 }
 input[id="password"] + p {
     margin-top: 5px;
+    color: #7A8694;
 }
 input#new-password + p {
     margin-top: 6px;
+    color: #7A8694;
 }
