@@ -1,5 +1,5 @@
 @media screen and (min-width:1400px){
-    section.login-form {
+    .common-form-style {
         height: 100vh;
         overflow: hidden;
     }
