@@ -64,6 +64,10 @@
         height: 100%;
         grid-template-columns: 100%;
     }
+    .form-wrap .item {
+        height: auto;
+        min-height: 100vh;
+    }
     .form-img {
         display: none;
     }
