@@ -717,6 +717,7 @@ td.connection button {
     position: sticky;
     right: 0;
     z-index: 1;
+    border-left: 2px solid rgba(0 0 0 / 3%);
 }
 .business-list td:last-child {
     background-color: #fff;
@@ -731,6 +732,12 @@ td.action details {
 }
 .business-list td.action.active {
     z-index: 50;
+}
+.user-list-table th {
+    width: 243px;
+}
+.user-list-table th:last-child, .user-list-table td:last-child {
+    width: 94px;
 }
 /* business card layout start  */
 .business-card-layout {
