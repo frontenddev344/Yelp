@@ -1361,3 +1361,6 @@ input[type="checkbox"]:checked::before {
 .verification-code + .from-btn {
     margin-bottom: 32px;
 }
+input[id="password"] + p {
+    margin-top: 5px;
+}
