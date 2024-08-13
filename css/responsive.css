@@ -55,6 +55,7 @@
     }
     .view-all {
         display: flex;
+        align-items: center;
         gap: 5px;
     }
     .view-all img:last-child {
