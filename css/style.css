@@ -693,7 +693,7 @@ td.name p {
     font-weight: 500;
 }
 td.address p {
-    width: 167px;
+    width: 135px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -707,7 +707,8 @@ td.email p {
     text-overflow: ellipsis;
 }
 td.status {
-    text-align: center;
+    text-align: left;
+    padding-left: 12px;
 }
 td.connection {
     text-align: center;
