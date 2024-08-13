@@ -549,6 +549,7 @@ table.business-list th {
 table.business-list td {
     background: #fff;
     border-bottom: 1px solid  #E3E7ED;
+    text-align: left;
 }
 table.business-list th.actions {
     background: #fff;
@@ -642,14 +643,14 @@ table.business-list p {
     color: #000;
     text-transform: capitalize;
 }
-.business-list .status-active {
+/* .business-list .status-active {
     margin-inline: 24px;
-}
+} */
 .business-list td.web-hook .test-btn {
-    margin-inline: 24px;
+    margin-inline: 12px;
 }
 .business-list td.leads .leads-btn {
-    margin-left: 24px;
+    margin-left: 12px;
 }
 /* tabe width  */
 
@@ -724,6 +725,8 @@ th.email {
     right: 0;
     z-index: 1;
     border-left: 2px solid rgba(0 0 0 / 3%);
+    text-align: center;
+    width: 95px;
 }
 .business-list td:last-child {
     background-color: #fff;
