@@ -866,10 +866,10 @@ td.action details {
     box-shadow: 0px 1px 2px 0px color(display-p3 0.0627 0.0941 0.1569 / 0.05);
     padding: 8px 14px;
 }
-.label-control sup, .label-control sub {
+.label-control sup{
     font-size: 14px;
     top: 0;
-    left: -2px;
+    left: -3px;
 }
 textarea.input-control {
     height: 82px;
