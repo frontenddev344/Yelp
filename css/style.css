@@ -429,6 +429,10 @@ a.toggle-btn {
     align-items: center;
     gap: 5px;
 }
+.layout-box button {
+    border: 0;
+    background: transparent;
+}
 .view-all {
     border-radius: 8px;
     border: 1px solid #E7E9EB;
