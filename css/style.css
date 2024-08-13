@@ -1266,6 +1266,9 @@ input:checked + .slider:before {
 .form-img {
     height: 100%;
 }
+label[for="rememeber"] {
+    cursor: pointer;
+}
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -1275,6 +1278,7 @@ input[type="checkbox"] {
     border: 1px solid #eee;
     border-radius: 4px;
     position: relative;
+    cursor: pointer;
 }
 input[type="checkbox"]::before {
     content: "";
