@@ -947,8 +947,36 @@ input#webHook {
     background: radial-gradient(93.17% 56.83% at 54.17% -22.22%, #FFB0B2 0%, #F00 100%);
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20) inset, 0px 0px 0px 2px rgba(255, 255, 255, 0.08) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 6px -3px rgba(0, 0, 0, 0.20);
     color: #fff;
+    position: relative;
+    transition: all 0.2s linear;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
 }
-
+.modal-footer button.primary-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s linear;
+    border-radius: inherit;
+    border: 1px solid var(--red);
+}
+.modal-footer .primary-btn:hover {
+    opacity: 1;
+    color: var(--red);
+}
+.modal-footer .primary-btn:hover::before {
+    opacity: 1;
+}
+.modal-footer .primary-btn i {
+    font-size: 23px;
+    line-height: 1;
+}
 .business-modal .modal-header h4 {
     color: var(--black);
     font-size: 20px;
@@ -971,14 +999,18 @@ input#webHook {
 }
 .modal-footer .btn-secondary {
     border-radius: 8px;
-    border: 1px solid var(--Grey-G40, #E7E9EB);
-    background: var(--White-White, #FFF);
+    border: 1px solid #E7E9EB;
+    background: #FFF;
     box-shadow: 0px 1px 2px 0px rgba(14, 24, 41, 0.05);
     color: #000;
     text-transform: capitalize;
     padding: 8px 12px;
+    transition: all 0.2s linear;
 }
-
+.modal-footer .btn-secondary:hover {
+    background: var(--red);
+    color: #fff;
+}
 /* profile popup start  */
 .profile-modal .modal-content {
     padding: 20px 24px;
@@ -1002,7 +1034,6 @@ input#webHook {
     color: #848E9C;
 }
 .profile-modal .modal-footer button {
-    display: block;
     width: calc(50% - 4px);
     margin: 0;
 }
@@ -1331,6 +1362,27 @@ input[type="checkbox"]:checked::before {
     font-weight: 500;
     line-height: 20px;
     border: 0;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: all 0.2s linear;
+}
+.from-btn button:hover {
+    color: var(--red);
+}
+.from-btn button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s linear;
+    border-radius: inherit;
+    border: 1px solid var(--red);
+}
+.from-btn button:hover::before {
+    opacity: 1;
 }
 .form-btm-para p {
     margin: 0;
