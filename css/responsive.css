@@ -8,6 +8,11 @@
     }
 }
 /* desktop screen end */
+@media screen and (max-width:991px){
+    .form-bottom {
+        top: calc(100% - 60px);
+    }
+}
 @media screen and (max-width:768px){
     header.site-header {
         padding: 8px 0;

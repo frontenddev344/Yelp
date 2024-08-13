@@ -1275,7 +1275,6 @@ input:checked + .slider:before {
     background-size: cover;
     display: flex;
     align-items: center;
-    margin-bottom: -20px;
 }
 .form-icon a {
     background: radial-gradient(93.71% 93.71% at 20.73% 10.98%, #FFA9AC 0%, #FC0000 100%);
