@@ -702,7 +702,7 @@ td.phone p {
     white-space: nowrap;
 }
 td.email p {
-    width: 220px;
+    width: 185px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -715,7 +715,9 @@ td.connection {
 td.connection button {
     margin-right: 20px;
 }
-
+th.email {
+    width: 184px;
+}
 .business-list th:last-child, .business-list td:last-child {
     position: sticky;
     right: 0;
