@@ -1256,7 +1256,7 @@ input:checked + .slider:before {
     justify-content:center;
 }
 .form-wrap .item {
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 

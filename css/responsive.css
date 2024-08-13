@@ -1,7 +1,14 @@
 @media screen and (min-width:1400px){
+    .login-form {
+        height: 100vh;
+        overflow: hidden;
+    }
     .common-form-style {
         height: 100vh;
         overflow: hidden;
+    }
+    .login-form .form-wrap .item {
+        height: 100vh;
     }
     .form-wrap .item {
         height: 100vh;
