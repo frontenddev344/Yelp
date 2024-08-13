@@ -536,7 +536,10 @@ table.business-list {
     user-select: none;
 }
 table.business-list h4, table.business-list p {
-    padding: 12px 24px;
+    padding: 12px 0 12px 12px;
+}
+table.business-list th.name, table.business-list td.name {
+    padding-left: 24px;
 }
 table.business-list th {
     background: #F8FAFB;
@@ -650,7 +653,7 @@ table.business-list p {
 }
 /* tabe width  */
 
-/* th.name {
+th.name {
     width: 187px;
 }
 
@@ -680,9 +683,9 @@ th.web-hook {
 
 th.leads {
     width: 115px;
-} */
+}
 td.name p {
-    width: 210px;
+    width: 170px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

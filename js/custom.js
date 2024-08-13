@@ -44,11 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+let zindex = 10
+
 $(document).ready(function(){
     $(".business-list .action").click(function(){
-        $(this).css('z-index', '50');
+        $(this).css('z-index', zindex);
+        zindex++;
     });
 });
+
 
 // $(document).ready(function(){
 //     $(".business-list .action").click(function(){
