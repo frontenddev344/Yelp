@@ -98,7 +98,9 @@
     .business-card-layout {
         padding: 16px 16px 8px;
     }
-   
+    .form-header h4 {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width:460px){
