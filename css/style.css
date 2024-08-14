@@ -153,8 +153,8 @@ header.site-header {
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 99;
-    border-bottom: 1px solid #b03b68;
+    z-index: 1;
+    border-bottom: 1px solid #aa001d;
 }
 .header-content {
     display: flex;
@@ -288,6 +288,7 @@ button.profile-name:hover .profile-dropdown{
     position: absolute;
     top: -3px;
     right: -3px;
+    box-shadow: 0 0 8px #FF8913;
 }
 /* site banner start  */
 
