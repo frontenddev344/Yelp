@@ -19,6 +19,9 @@
     .form-bottom {
         top: calc(100% - 60px);
     }
+    .site-nav {
+        margin-left: 40px;
+    }
 }
 @media screen and (max-width:768px){
     header.site-header {
@@ -50,6 +53,9 @@
     }
     .site-nav ul a {
         width: 100%;
+    }
+    .site-nav ul a.active {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.21) 241.96%);
     }
     a.toggle-btn {
         display: block;
@@ -123,6 +129,18 @@
     }
     .form-header h4 {
         font-size: 26px;
+    }
+    button.profile-name span {
+        font-size: 0;
+    }
+    button.profile-name {
+        margin-left: 0px;
+    }
+    .header-right {
+        gap: 8px;
+    }
+    .site-logo {
+        margin-left: 15px;
     }
 }
 

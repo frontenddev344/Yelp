@@ -212,14 +212,18 @@ header.site-header {
     justify-content: center;
     cursor: pointer;
 }
-.avatar-content a {
+.avatar-content > a {
     color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
 }
 button.profile-name {
     background: transparent;
     border: 0;
     color: #fff;
     position: relative;
+    margin-left: 5px;
 }
 .profile-dropdown {
     position: absolute;
