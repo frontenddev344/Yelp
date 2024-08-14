@@ -153,8 +153,8 @@ header.site-header {
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid #b8000a8a;
     z-index: 99;
+    border-bottom: 1px solid #b03b68;
 }
 .header-content {
     display: flex;
