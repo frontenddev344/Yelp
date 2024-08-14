@@ -170,7 +170,7 @@ header.site-header {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.21) 241.96%);
 }
 .site-logo a img {
-    margin-right: 3px;
+    max-width: 130px;
 }
 .site-nav {
     margin-right: auto;
@@ -1281,7 +1281,7 @@ input:checked + .slider:before {
     align-items: center;
     margin-bottom: 20px;
 }
-.form-icon a {
+/* .form-icon a {
     background: radial-gradient(93.71% 93.71% at 20.73% 10.98%, #FFA9AC 0%, #FC0000 100%);
     width: 58px;
     aspect-ratio: 1;
@@ -1290,6 +1290,11 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
     box-shadow: 32.537px 29.707px 12.732px 0px rgba(135, 0, 0, 0.02), 21.22px 18.39px 11.317px 0px rgba(135, 0, 0, 0.15), 11.317px 11.317px 9.902px 0px rgba(135, 0, 0, 0.50), 5.659px 4.244px 7.073px 0px rgba(135, 0, 0, 0.85), 1.415px 1.415px 4.244px 0px rgba(135, 0, 0, 0.98);
+    margin: 0 auto;
+} */
+.form-icon a {
+    width: 100%;
+    max-width: 190px;
     margin: 0 auto;
 }
 .form-header h4 {
