@@ -1506,5 +1506,10 @@ input#new-password + p {
     padding: 0;
     margin-right: 8px;
 }
-
+.user-business-modal .modal-footer {
+    padding: 20px 24px;
+}
+.user-business-modal .modal-header {
+    padding: 18px 20px;
+}
 /* new css end */
