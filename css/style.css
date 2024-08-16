@@ -298,7 +298,9 @@ button.profile-name:hover .profile-dropdown{
     position: relative;
     isolation: isolate;
     /* background: url("../images/banner-img.png"); */
-    background: url("../images/new-banner.svg");
+    /* background: url("../images/new-banner.svg"); */
+    background: url("../images/hero-banner-img.png");
+
 
     background-repeat: no-repeat;
     background-position: center;
