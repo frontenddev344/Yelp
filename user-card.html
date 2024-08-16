@@ -214,10 +214,10 @@
                     <p>Welcome back, here’s your today’s activity!</p>
                 </div>
                 <div class="banner-btns">
-                    <button class="secondary-btn">
+                    <!-- <button class="secondary-btn">
                         <img src="images/LinkSimple.svg" alt="LinkSimple">
                         Connect yelp business
-                    </button>
+                    </button> -->
                     <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                         <img src="images/Plus.svg" alt="Plus">
                         Add a new user
@@ -239,10 +239,21 @@
                         </div>
                         <div class="business-header_right">
                             <div class="layout-box">
-                                <button class="list-view-btn">
-                                   <img src="images/toggle-icon.svg" alt="toggle-icon">
+                                <button class="list-view-btn ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <g clip-path="url(#clip0_9_2268)">
+                                          <path d="M2.84375 8H13.1562" stroke="#141415" style="stroke:#141415;stroke:color(display-p3 0.0786 0.0801 0.0834);stroke-opacity:1;" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M2.84375 4.25H13.1562" stroke="#141415" style="stroke:#141415;stroke:color(display-p3 0.0786 0.0801 0.0834);stroke-opacity:1;" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M2.84375 11.75H13.1562" stroke="#141415" style="stroke:#141415;stroke:color(display-p3 0.0786 0.0801 0.0834);stroke-opacity:1;" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_9_2268">
+                                            <rect width="15" height="15" fill="white" style="fill:white;fill-opacity:1;" transform="translate(0.5 0.5)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
                                 </button>
-                                <button class="grid-view-btn">
+                                <button class="grid-view-btn active">
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                       <g clip-path="url(#clip0_9_116)">
                                          <path d="M6.59375 3.3125H3.78125C3.52237 3.3125 3.3125 3.52237 3.3125 3.78125V6.59375C3.3125 6.85263 3.52237 7.0625 3.78125 7.0625H6.59375C6.85263 7.0625 7.0625 6.85263 7.0625 6.59375V3.78125C7.0625 3.52237 6.85263 3.3125 6.59375 3.3125Z" stroke="#667085" style="stroke:#667085;stroke:color(display-p3 0.4000 0.4392 0.5216);stroke-opacity:1;" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
@@ -265,7 +276,7 @@
                             </div>
                             <div class="search_bar">
                               <img src="images/search.svg" alt="search">
-                              <input type="text" class="input-control" placeholder="Search for businesses">
+                              <input type="text" class="input-control" placeholder="User search">
                             </div>
                         </div>
                     </div>
@@ -955,6 +966,15 @@
                                          <input type="text" id="user-name" class="input-control" value="Aviv">
                                     </div>
                                 </div>
+
+                               
+                                <div class="form-group">
+                                    <label for="email-address" class="label-control">
+                                       Email address <sup>*</sup>
+                                    </label>
+                                    <input type="text" id="email-address" class="input-control" placeholder="oran.aviv@gmail.com">
+                                 </div>
+
                                 <div class="item">
                                     <div class="form-group">
                                         <label for="accounts" class="label-control">

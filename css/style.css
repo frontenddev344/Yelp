@@ -450,9 +450,19 @@ a.toggle-btn {
     align-items: center;
     gap: 5px;
 }
+
 .layout-box button {
-    border: 0;
+    border: none;
     background: transparent;
+    padding: 2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.layout-box button.active{
+    border: 1px solid #717B8A;
 }
 .view-all {
     border-radius: 8px;
@@ -1472,3 +1482,24 @@ input#new-password + p {
     margin-top: 6px;
     color: #7A8694;
 }
+
+
+/* new css start */
+.user-form form .item:last-child {
+    grid-column: 1/-1;
+}
+.user-business-modal .modal-dialog.modal-dialog-centered {
+    max-width: 690px;
+}
+.user-business-modal .modal-dialog.modal-dialog-centered .modal-content {
+    border-radius: 15px;
+}
+.user-business-modal .input-control::placeholder{
+    color: #0B0B0B;
+}
+.user-business-modal button.btn-close {
+    background-size: 13px;
+    padding: 0;
+    margin-right: 8px;
+}
+/* new css end */
