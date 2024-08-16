@@ -297,7 +297,9 @@ button.profile-name:hover .profile-dropdown{
     /* background: radial-gradient(rgba(129, 0, 0, 0.76), rgb(34 5 5) ); */
     position: relative;
     isolation: isolate;
-    background: url("../images/banner-img.png");
+    /* background: url("../images/banner-img.png"); */
+    background: url("../images/new-banner.svg");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
