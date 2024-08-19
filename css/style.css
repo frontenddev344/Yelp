@@ -1516,4 +1516,7 @@ input#new-password + p {
 .from-btn button a{
     display: block;
 }
+table.business-list.user-list-table {
+    min-width: 1050px;
+}
 /* new css end */
