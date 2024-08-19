@@ -154,7 +154,8 @@ header.site-header {
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 1px solid #aa001d;
+    /* border-bottom: 1px solid #aa001d; */
+    border-bottom: 1px solid #ff02784f;
 }
 .header-content {
     display: flex;
