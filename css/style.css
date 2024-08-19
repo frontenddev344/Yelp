@@ -1513,4 +1513,7 @@ input#new-password + p {
 .user-business-modal .modal-header {
     padding: 18px 20px;
 }
+.from-btn button a{
+    display: block;
+}
 /* new css end */
