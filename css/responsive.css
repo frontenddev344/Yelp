@@ -151,5 +151,8 @@
     .pagination ul {
         display: none;
     }
+    .form-group-toggles .grid {
+        grid-template-columns: 100%;
+    }
     
 }

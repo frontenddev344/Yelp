@@ -1542,7 +1542,7 @@ width: auto;
 background-color: #ff0000;
 }
 
-.form-group-toggles .grid.grid-cols-2 {
+.form-group-toggles .grid {
 grid-gap: 20px;
 }
 .form-group-toggles {
