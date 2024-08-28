@@ -1649,4 +1649,76 @@ overflow: hidden;
     text-align: left;
     color: #fff;
 }
+.message-recieved{
+    width: 70%;
+    display: flex;
+margin: 20px 0;
+}
+.recieved-left{
+    margin-right: 12px;
+}
+.recieved-name span {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #344054;
+}
+.recieved-time span {
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #667085;
+}
+.recieved-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.recieved-right {
+    width: 94%;
+}
+.message-text {
+    padding: 10px 14px 10px 14px;
+    border-radius: 0px 8px 8px 8px;
+    background: #F2F4F7;
+    margin-top: 5px;
+}
+.message-text p {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #101828;
+}
+.message-text p:last-child{
+    margin-bottom: 0;
+}
+.message-recieved.message-send {
+    width: 55%;
+    margin-left: auto;
+}
+.message-send .recieved-right {
+    width: 100%;
+}
+.message-send 
+ .message-text {
+    background: radial-gradient(56.83% 93.17% at 54.17% -22.22%, #FFB0B2 0%, #FF0000 100%) ;
+   
+    
+    border-radius: 8px 0px 8px 8px;
+
+}
+.message-send 
+ .message-text p{
+    color: #fff;
+ }
+ .message-recieved:last-child{
+    margin-bottom: 0;
+ }
 /* Lead Conversations popup css end */
