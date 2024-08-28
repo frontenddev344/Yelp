@@ -1563,3 +1563,90 @@ background: #dee2e6;
 overflow: hidden;
 }
 /* new css end */
+
+/* Lead Conversations popup css start */
+
+.conversations-modal .modal-dialog.modal-dialog-centered {
+    max-width: 845px;
+}
+.conversations-modal .modal-content{
+    border-radius: 12px;
+}
+.conversations-modal .modal-header h4 {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: #000;
+}
+.conversations-modal .modal-header h4 span{
+    color: #1E4764;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 2px 8px;
+    border-radius: 16px;
+    border: 1px solid #D6E5F2;
+    background: #F2F6FB;
+    margin-left: 5px;
+}
+.conversations-modal .btn-close {
+    padding: 0 ;
+    background-size: 11px;
+    margin-right: 3px ;
+}
+.conversations-modal .modal-header {
+    padding: 18px 20px;
+    border-bottom: none;
+}
+
+.conversations-modal .modal-body{
+    padding: 0 20px 20px;
+}
+.conversations-modal .dayseprator {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.conversations-modal .dayseprator:before {
+    content: "";
+    height: 1px;
+    background: #E4E7EC;
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 0.2px);
+}
+.conversations-modal .dayseprator span {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    padding-inline: 10px;
+    height: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: center;
+    color: #667085;
+}
+
+.recieved-left span{
+    height: 40px;
+    width: 40px;
+    border-radius: 28px;
+    background-color: #A2A8CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #fff;
+}
+/* Lead Conversations popup css end */
