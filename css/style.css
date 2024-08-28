@@ -1565,9 +1565,12 @@ overflow: hidden;
 /* new css end */
 
 /* Lead Conversations popup css start */
-.details summary div {
+/* .details summary div {
     display: none !important;
-}
+} */
+ summary::-webkit-details-marker{
+    display: none;
+ }
 .conversations-modal .modal-dialog.modal-dialog-centered {
     max-width: 845px;
 }
