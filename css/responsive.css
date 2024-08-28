@@ -112,6 +112,11 @@
 }
 
 @media screen and (max-width:575px){
+    .banner-btns {
+        display: flex;
+        gap: 3px;
+        justify-content: space-between;
+    }
     .business-card-layout .grid {
         grid-template-columns: 100%;
     }
