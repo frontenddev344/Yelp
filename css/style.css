@@ -1565,7 +1565,9 @@ overflow: hidden;
 /* new css end */
 
 /* Lead Conversations popup css start */
-
+.details summary div {
+    display: none !important;
+}
 .conversations-modal .modal-dialog.modal-dialog-centered {
     max-width: 845px;
 }
