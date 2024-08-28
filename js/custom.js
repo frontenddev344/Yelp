@@ -53,19 +53,12 @@ $(document).ready(function(){
     });
 });
 
-
-// $(document).ready(function(){
-//     $(".business-list .action").click(function(){
-//         $(this).toggleClass('active');
-//     });
-// });
-// $(document).ready(function(){
-//     $(".business-list .action").click(function(){
-//         // Remove z-index from all .action elements
-//         $(".business-list .action").css('z-index', '');
-
-//         // Set z-index only for the clicked element
-//         $(this).css('z-index', '50');
-//     });
-// });
-
+document.querySelectorAll('details').forEach((detail) => {
+    detail.addEventListener('click', function() {
+        document.querySelectorAll('details').forEach((otherDetail) => {
+            if (otherDetail !== detail && otherDetail.hasAttribute('open')) {
+                otherDetail.removeAttribute('open');
+            }
+        });
+    });
+});
