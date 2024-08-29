@@ -62,3 +62,12 @@ document.querySelectorAll('details').forEach((detail) => {
         });
     });
 });
+
+
+
+$(document).ready(function() {
+    $(".js-select2").select2({
+      closeOnSelect: false
+    });
+  });
+
