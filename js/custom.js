@@ -96,6 +96,7 @@ function addCountry(selectedCountry) {
         options.insertAdjacentHTML("beforeend", li);
     });
 }
+
 addCountry();
 
 function updateName(selectedLi) {
@@ -115,13 +116,16 @@ function removeActive(items) {
 }
 
 function addActive(items) {
-    if (!items) return false;
+    if (!items || items.length === 0) return false;
     removeActive(items);
+
     if (currentFocus >= items.length) currentFocus = 0;
     if (currentFocus < 0) currentFocus = items.length - 1;
+
     items[currentFocus].classList.add("selected");
     items[currentFocus].scrollIntoView({
-        block: "nearest"
+        block: "nearest",
+        inline: "nearest"
     });
 }
 
@@ -146,7 +150,9 @@ searchInp.addEventListener("keyup", (e) => {
         addActive(items);
     } else if (e.key === "Enter") {
         if (currentFocus > -1) {
-            if (items) items[currentFocus].click();
+            items[currentFocus].click(); // Select the current item
+        } else if (items.length > 0) {
+            items[0].click(); // Select the first item if none are highlighted
         }
     }
 });
@@ -156,7 +162,6 @@ selectBtn.addEventListener("click", () => {
     searchInp.focus(); // Focus on the input when the dropdown opens
     currentFocus = -1; // Reset the focus index
 });
-
 
 
 // select 2 js end
