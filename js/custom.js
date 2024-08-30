@@ -71,6 +71,8 @@ document.querySelectorAll('details').forEach((detail) => {
 //     });
 //   });
 
+
+
 const wrapper = document.querySelector(".wrapper"),
     selectBtn = wrapper.querySelector(".select-btn"),
     searchInp = wrapper.querySelector("input"),
