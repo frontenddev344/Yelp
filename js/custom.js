@@ -120,6 +120,9 @@ function addActive(items) {
     if (currentFocus >= items.length) currentFocus = 0;
     if (currentFocus < 0) currentFocus = items.length - 1;
     items[currentFocus].classList.add("selected");
+    items[currentFocus].scrollIntoView({
+        block: "nearest"
+    });
 }
 
 searchInp.addEventListener("keyup", (e) => {
@@ -153,6 +156,7 @@ selectBtn.addEventListener("click", () => {
     searchInp.focus(); // Focus on the input when the dropdown opens
     currentFocus = -1; // Reset the focus index
 });
+
 
 
 // select 2 js end
