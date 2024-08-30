@@ -12,6 +12,112 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/responsive.css">
       <title>Yelp</title>
+
+      <style>
+         
+.select-btn, li{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.select-btn span {
+    color: #868686;
+}
+/* .select-btn{
+  height: 65px;
+  padding: 0 20px;
+  font-size: 22px;
+  background: #fff;
+  border-radius: 7px;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+} */
+.select-btn i{
+   font-size: 25px;
+    transition: transform 0.3s linear;
+    color: #bcc1c9;
+}
+.wrapper.active .select-btn i{
+  transform: rotate(-180deg);
+}
+.content{
+  display: none;
+  padding: 20px;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.wrapper.active .content{
+  display: block;
+}
+.content .search{
+  position: relative;
+}
+.search i{
+  top: 50%;
+  left: 15px;
+  color: #999;
+  font-size: 20px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.search input{
+   height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 20px 20px;
+    border: 1px solid #B3B3B3;
+}
+.search input:focus{
+   padding-left: 20px;
+   border: 1px solid #000000;
+}
+.search input::placeholder{
+  color: #bfbfbf;
+}
+.content .options{
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-right: 7px;
+}
+.options::-webkit-scrollbar{
+  width: 7px;
+}
+.options::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
+.options li{
+   height: auto;
+    padding: 5px 13px;
+    font-size: 16px;
+}
+.options li:hover, li.selected{
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+.select-btn.active span {
+    color: #000;
+}
+.select-btn.active i {
+    color: #000;
+}
+      </style>
+
+
    </head>
    <body>
       <header class="site-header">
@@ -916,6 +1022,7 @@
                               <label for="accounts" class="label-control">
                                  Yelp Accounts <sup>*</sup>
                               </label>
+                              
                               <!-- <select name="cars" id="accounts" class="input-control">
                                  <option value="volvo">iQSAY account</option>
                                  <option value="saab">Build Strong Group</option>
@@ -931,7 +1038,7 @@
                                  <option value="audi">McDonald's</option>
                                </select> -->
                              
-       <div class="select_new">
+       <!-- <div class="select_new">
          <label>Select One</label>
          <select class="js-select2">
            <option>Alabama</option>
@@ -984,8 +1091,29 @@
            <option>West Virginia</option>
            <option>Wisconsin</option>
            <option>Wyoming</option>
-         </select>
-       </div> 
+         </select> 
+      </div> 
+         
+         -->
+
+       <div class="wrapper input-control">
+         <div class="select-btn">
+           <span>Select Country</span>
+           <i class="ri-arrow-down-s-line"></i>
+         </div>
+         <div class="content">
+           <div class="search">
+             <i class="uil uil-search"></i>
+             <input spellcheck="false" type="text" placeholder="Search">
+           </div>
+           <ul class="options"></ul>
+         </div>
+       </div>
+
+
+
+
+
                            </div>
                               <div class="form-group-toggles">
                                <div class="grid grid-cols-2">
