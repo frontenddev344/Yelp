@@ -86,6 +86,8 @@ let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh
     "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
     "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
 
+let currentFocus = -1;
+
 function addCountry(selectedCountry) {
     options.innerHTML = "";
     countries.forEach(country => {
@@ -102,7 +104,22 @@ function updateName(selectedLi) {
     wrapper.classList.remove("active");
     selectBtn.firstElementChild.innerText = selectedLi.innerText;
 
+    // Add the 'active' class to the select button
     selectBtn.classList.add("active");
+}
+
+function removeActive(items) {
+    for (let i = 0; i < items.length; i++) {
+        items[i].classList.remove("selected");
+    }
+}
+
+function addActive(items) {
+    if (!items) return false;
+    removeActive(items);
+    if (currentFocus >= items.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = items.length - 1;
+    items[currentFocus].classList.add("selected");
 }
 
 searchInp.addEventListener("keyup", (e) => {
@@ -116,15 +133,27 @@ searchInp.addEventListener("keyup", (e) => {
     }).join("");
     options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
 
-    if (e.key === "Enter" && arr.length > 0) {
-        let firstResult = options.querySelector("li");
-        if (firstResult) {
-            updateName(firstResult);
+    let items = options.getElementsByTagName("li");
+
+    if (e.key === "ArrowDown") {
+        currentFocus++;
+        addActive(items);
+    } else if (e.key === "ArrowUp") {
+        currentFocus--;
+        addActive(items);
+    } else if (e.key === "Enter") {
+        if (currentFocus > -1) {
+            if (items) items[currentFocus].click();
         }
     }
 });
 
-selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
+selectBtn.addEventListener("click", () => {
+    wrapper.classList.toggle("active");
+    searchInp.focus(); // Focus on the input when the dropdown opens
+    currentFocus = -1; // Reset the focus index
+});
+
 
 // select 2 js end
 
