@@ -72,6 +72,7 @@ document.querySelectorAll('details').forEach((detail) => {
 //   });
 
 
+// select 2 js start
 
 const wrapper = document.querySelector(".wrapper"),
     selectBtn = wrapper.querySelector(".select-btn"),
@@ -101,7 +102,6 @@ function updateName(selectedLi) {
     wrapper.classList.remove("active");
     selectBtn.firstElementChild.innerText = selectedLi.innerText;
 
-    // Add the 'active' class to the select button
     selectBtn.classList.add("active");
 }
 
@@ -116,7 +116,6 @@ searchInp.addEventListener("keyup", (e) => {
     }).join("");
     options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
 
-    // If the Enter key is pressed and there is a matching country
     if (e.key === "Enter" && arr.length > 0) {
         let firstResult = options.querySelector("li");
         if (firstResult) {
@@ -127,5 +126,6 @@ searchInp.addEventListener("keyup", (e) => {
 
 selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
 
+// select 2 js end
 
 

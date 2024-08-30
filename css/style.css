@@ -1861,3 +1861,102 @@ margin: 22px 0;
   span.selection {
     width: 100%;
 }
+
+/* 30-8-24 css start */
+
+     
+.business-modal .select-btn, li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+  }
+  .business-modal .select-btn span {
+      color: #868686;
+  }
+  
+  .business-modal .select-btn i{
+     font-size: 25px;
+      transition: transform 0.3s linear;
+      color: #bcc1c9;
+  }
+  .business-modal .wrapper.active .select-btn i{
+    transform: rotate(-180deg);
+  }
+  .business-modal .content{
+    display: none;
+    padding: 20px;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  .business-modal .wrapper.active .content{
+    display: block;
+  }
+  .business-modal .content .search{
+    position: relative;
+  }
+  .business-modal .search i{
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .business-modal .search input{
+     height: 30px;
+      width: 100%;
+      outline: none;
+      font-size: 17px;
+      border-radius: 5px;
+      padding: 20px 20px;
+      border: 1px solid #B3B3B3;
+  }
+  .business-modal .search input:focus{
+     padding-left: 20px;
+     border: 1px solid #000000;
+  }
+  .business-modal .search input::placeholder{
+    color: #bfbfbf;
+  }
+  .business-modal .content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+  }
+  .business-modal .options::-webkit-scrollbar{
+    width: 7px;
+  }
+  .business-modal .options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  .business-modal .options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+  }
+  .business-modal .options::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+  }
+  .business-modal .options li{
+     height: auto;
+      padding: 5px 13px;
+      font-size: 16px;
+  }
+  .business-modal .options li:hover, li.selected{
+    border-radius: 5px;
+    background: #f2f2f2;
+  }
+  .business-modal .select-btn.active span {
+      color: #000;
+  }
+  .business-modal .select-btn.active i {
+      color: #000;
+  }
+
+
+/* 30-8-24 css end */
