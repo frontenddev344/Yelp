@@ -71,7 +71,6 @@ document.querySelectorAll('details').forEach((detail) => {
 //     });
 //   });
 
-
 const wrapper = document.querySelector(".wrapper"),
     selectBtn = wrapper.querySelector(".select-btn"),
     searchInp = wrapper.querySelector("input"),
@@ -100,11 +99,11 @@ function updateName(selectedLi) {
     wrapper.classList.remove("active");
     selectBtn.firstElementChild.innerText = selectedLi.innerText;
 
-    // Ensure the select button has the 'active' class when an item is selected
+    // Add the 'active' class to the select button
     selectBtn.classList.add("active");
 }
 
-searchInp.addEventListener("keyup", () => {
+searchInp.addEventListener("keyup", (e) => {
     let arr = [];
     let searchWord = searchInp.value.toLowerCase();
     arr = countries.filter(data => {
@@ -114,8 +113,17 @@ searchInp.addEventListener("keyup", () => {
         return `<li onclick="updateName(this)" class="${isSelected}">${data}</li>`;
     }).join("");
     options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+
+    // If the Enter key is pressed and there is a matching country
+    if (e.key === "Enter" && arr.length > 0) {
+        let firstResult = options.querySelector("li");
+        if (firstResult) {
+            updateName(firstResult);
+        }
+    }
 });
 
 selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
+
 
 
