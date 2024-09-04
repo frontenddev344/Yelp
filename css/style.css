@@ -1960,3 +1960,22 @@ margin: 22px 0;
 
 
 /* 30-8-24 css end */
+
+
+.email-box {
+    position: relative;
+}
+
+
+.email-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mail-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 35px;
+    z-index: 999;
+    height: 100%;
+}
