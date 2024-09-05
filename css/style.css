@@ -606,7 +606,7 @@ table.business-list h4{
 }
 table.business-list p {
     color: #647087;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     margin: 0; 
 }
@@ -643,7 +643,7 @@ table.business-list p {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #000;
     text-transform: capitalize;
@@ -653,7 +653,7 @@ table.business-list p {
     border: 1px solid #FFCECF;
     background: #FFF9F9;
     color: #F00;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
     padding: 7px 12px;
@@ -666,7 +666,7 @@ table.business-list p {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: #000;
     text-transform: capitalize;
@@ -680,7 +680,7 @@ table.business-list p {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: #000;
     text-transform: capitalize;
